@@ -1,4 +1,8 @@
+import React from "react";
+
+
 function Anime({ name, description }) {
+
   return (
     <div className="anime-item">
       <p>{name}</p>

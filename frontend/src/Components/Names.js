@@ -1,7 +1,4 @@
 
-
-
-
 // props = {
 //     name:'Jose',
 //     secondName:'Mejia',

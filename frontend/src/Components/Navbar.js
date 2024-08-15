@@ -1,5 +1,7 @@
 
 
+
+import { Link } from "react-router-dom"
 export default function Navbar() {
     return (
         <nav className='navbar'>
@@ -10,6 +12,7 @@ export default function Navbar() {
                 <p>Anime</p>
                 <p>Cartoons</p>
                 <p>random</p>
+                <button><Link to="/animes/new">New Anime</Link></button>
             </section>
         </nav>
     )

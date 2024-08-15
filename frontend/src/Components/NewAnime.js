@@ -4,7 +4,7 @@ import { useState } from "react"
 
 export default function NewAnime() {
 
-    const API = process.env.REACT_APP_API_URL
+    const API = process.env.REACT_APP_BASE_URL
 
     const [anime, setAnime] = useState({
         name: '',
@@ -54,12 +54,12 @@ export default function NewAnime() {
             <h1>New Anime</h1>
             <label>
                 Please enter the name of your anime:
-                <input type='text' value={anime.name} onChange={(event) => handleNameChange(event)}/>
+                <input type='text' value={anime.name} onChange={(event) => handleNameChange(event)} />
             </label>
             <label>
                 Please enter the description of your anime:
                 {/* <input type='text'/> */}
-                <textarea  value={anime.description} onChange={(event) => handleDesciptionChange(event)} />
+                <textarea value={anime.description} onChange={(event) => handleDesciptionChange(event)} />
             </label>
             <div className="form-button-container">
                 {/* <input type="submit" value={'Submit'} /> */}
