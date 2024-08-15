@@ -6,8 +6,8 @@
   "scripts": {
     "test": "jest",
     "start": "nodemon server.js",
-    "seed": "psql -U postgres -f db/seed.sql",
-    "schema": "psql -U postgres -f db/schema.sql",
+    "db:init": "psql -U postgres -f db/schema.sql",
+    "db:seed": "psql -U postgres -f db/seed.sql",
     "setup": "psql -U postgres -f db/schema.sql -f db/seed.sql"
   },
   "author": "",
